@@ -1,8 +1,9 @@
 body {
-  background-image: url("images/background.jpg"); /* Specify the path to your image file */
+  background-image: url("images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  font-size: 20px;
 }
 
 header {
@@ -20,11 +21,48 @@ nav ul {
 
 nav li {
   display: inline-block;
-  margin: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 nav a {
   color: white;
   text-decoration: none;
   padding: 5px;
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 64px;
+  font-weight: bold;
+  margin-left: 150px;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 150px;
+  width: 450px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.text {
+  flex: 1;
+}
+
+.content img {
+  max-width: 300px; /* Adjust the maximum width of the image as needed */
+  margin-right: 150px; /* Add space between the image and text */
 }
