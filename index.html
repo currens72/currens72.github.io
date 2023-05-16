@@ -1,206 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Thomas Glass</title>
-    <style>
-      /* Styling for the banner */
-      .banner {
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 20px;
-      }
-
-      /* Styling for the navigation links */
-      .nav {
-        display: inline-block;
-        margin: 0 10px;
-        color: #fff;
-        text-decoration: none;
-      }
-
-      /* Styling for the sections */
-      section {
-        display: none;
-        height: 500px;
-        padding: 50px;
-      }
-
-      /* Styling for the section headers */
-      h2 {
-        color: #333;
-        text-align: center;
-      }
-
-      .resume-content h3 {
-        border-bottom: 1px solid black;
-        padding-bottom: 10px;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Banner with name and navigation links -->
-    <div class="banner">
-        <h1>Thomas Glass</h1>
-        <a href="#" class="nav" data-section="home">Home</a>
-        <a href="#" class="nav" data-section="seniorDesign">Senior Design</a>
-        <a href="#" class="nav" data-section="projects">Projects</a>
-        <a href="#" class="nav" data-section="resume">Resume</a>
-    </div>
-
-    <section id="home" style="display:block;">
-        <h2>Welcome to my portfolio!</h2>
-    
-        <h3 style="text-align: left;">Contact Information</h3>
-        <p style="line-height: .4;">Thomas Glass</p>
-        <p style="line-height: .4;">tglass2001@gmail.com</p>
-        <p style="line-height: .4;">Geneva, Illinois</p>
+<head>
+  <title>My Website</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
   
-        <h3 style="text-align: left;">About Me</h3>
-        <p>I'm a recent graduate with a Bachelor's Degree in Cyber Security Engineering from Iowa State University and I have a strong interest in both software engineering and game development. I look forward to moving to the D.C. area to pursue my career in the tech industry. When I'm not working on coding projects or studying for exams, I enjoy playing ultimate frisbee with friends. It's a great way to unwind and stay active. I'm always looking for new challenges and opportunities to learn and grow!</p>
+  <h1>Thomas Glass</h1>
   
-        <h3 style="text-align: left;">Career Objective</h3>
-        <p>As a recent graduate in cyber security engineering, I am seeking a challenging and rewarding position as a software engineer or cyber security professional in the D.C. area. I am eager to work for a company that is dedicated to innovation and making a positive impact on the world. With a strong work ethic and a willingness to learn, I am confident that I can contribute to a company's success while continuing to grow as a professional.</p>
-    </section>
-
-    <section id="seniorDesign">
-        <h2>Senior Design: Collaborative Surveillance of<br>Large Geographical Area by Fleet of Drones</h2>
-        <h3 style="text-align: left;">Description of Project</h3>
-        <p>Testing drones in real-life situations can be challenging and expensive. Professionals in various fields of geographic surveying require visual and statistical data on how drone fleets respond to different phenomena, but the risks and costs associated with running actual tests can be prohibitive. As a result, many researchers in both academia and industry rely on simulations to test battery and energy usage under various conditions, as well as to assess the quality of coverage and average arrival times to interesting locations.<br><br>However, existing simulators are often custom-made and not easily adaptable for comparative studies. To address this limitation, our project aims to create a unified platform where different routing and dispatching algorithms for single drones or fleets of drones can be compared based on specific metrics, such as average or worst-case arrival times or coverage. Additionally, our project will feature a visualization tool that displays the drones' motion plan as they execute their mission over a chosen area of interest. This front-end functionality will be supported by a back-end host that generates actual data based on selected algorithms and input phenomenon-datasets.</p>
-        
-        <h3 style="text-align: left;">My Role</h3>
-        <p style="line-height: .4;">Standards & Security Validation</p>
-        <p style="line-height: .4;">Front End Development - React and BlueprintJS</p>
-        
-        <h3 style="text-align: left;">Skills and Knowledge Gained</h3>
-        <p style="line-height: .4;">JavaScript</p>
-        <p style="line-height: .4;">React</p>
-        <p style="line-height: .4;">BlueprintJS</p>
-        <p style="line-height: .4;">Docker</p>
-        
-        <h3 style="text-align: left;">Supporting Documents</h3>
-        <a href="https://sdmay23-50.sd.ece.iastate.edu/#" target="_blank">https://sdmay23-50.sd.ece.iastate.edu/#</a>
-        
-        <h3 style="text-align: left;">My Contribution</h3>
-        <p>Throughout the project, I contributed in several ways. Firstly, I researched various technologies that could be used to develop the system, including different programming languages and tools. This involved a significant amount of exploration and experimentation to determine the most suitable options for our needs. Secondly, I studied the drone algorithms that powered the project. This required a deep understanding of the algorithms to best understand how to implement them into our application.<br><br>This semester I played a significant role in the development of the project's front-end web application. I designed and built the user interface, ensuring that it was intuitive, user-friendly, and visually appealing. This involved working closely with other team members to ensure that the application was cohesive and met the needs of our users.<br><br>Overall, my contributions helped to ensure the success of the project by providing critical insights and technical expertise in key areas.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-
-        <h3 style="text-align: left;">COMS 309: Music Sharing Application</h3>
-        <h4 style="text-align: left;">Description</h4>
-        <p>Our project was a music sharing application designed to provide users with a social media-style platform for discovering and sharing their favorite songs. The application was programmed using Java and developed in Android Studio, which allowed us to create a native Android app that could be easily installed on users' devices.<br><br>To ensure efficient and collaborative development, we used Github as our version control system. This enabled us to manage changes, track issues, and work on different parts of the project simultaneously without encountering conflicts.<br><br>The application itself allows users to create and customize profiles, search for songs and artists, share their favorite tracks with their friends and followers, and allows them to upload their own tracks. Overall, our music sharing application offers a fun and interactive way for music lovers to connect, discover new songs, and share their passion for music with others.</p>
-        <h4 style="text-align: left;">My Role</h4>
-        <p>Front End Devlopment</p>
-        <h4 style="text-align: left;">Skills and Knowledge Gained</h4>
-        <p style="line-height: .4;">Practice in the Software Development Life Cycle</p>
-        <p style="line-height: .4;">Front End Development in Android Studio</p>
-        <p style="line-height: .4;">Android Development using Java</p>
-
-        <br><br>
-        <h3 style="text-align: left;">CPRE 381: MIPS Single-Cycle Processor</h3>
-        <h4 style="text-align: left;">Description</h4>
-        <p>For our project, we implemented a MIPS Single-Cycle Processor using mainly structural VHDL. We started by drawing a high-level schematic of the interconnection between components, based on the skeleton code provided in the testing framework. We added the remaining high-level components we needed to support basic instructions, such as add, sub, and or. We also added any additional components and signals required by the set of instructions not included in the book's schematic, such as shifts and lui.<br><br>We created a control signals spreadsheet detailing the list of M instructions to be supported in our project alongside their binary opcodes and funct fields, if applicable. We created a separate column for each binary bit and a new column for the N control signals needed by our datapath implementation. This resulted in an N*M table where each row corresponds to the output of the control logic module for a given instruction. We implemented the control logic module using with/select statements in VHDL and created a testbench to test this module individually and show that our output matches the expected control signals.<br><br>We also implemented the fetch logic that updates the PC (i.e., the address of the next instruction to fetch from memory), supporting the different control flow-related instructions we were required to implement, such as jumps and branches. We drew a schematic of the fetch logic and created a testbench to verify its functionality.<br><br>Finally, we integrated all components and tested our MIPS Single-Cycle Processor using the automated testing framework provided. We loaded instruction and data memories with example programs and verified that our processor executed them correctly. We also debugged any issues that arose during testing and made necessary updates to our design.</p>
-        <h4 style="text-align: left;">My Role</h4>
-        <p>Lead Programmer</p>
-        <h4 style="text-align: left;">Skills and Knowledge Gained</h4>
-        <p style="line-height: .4;">VHDL Programming</p>
-        <p style="line-height: .4;">MIPS Assembly Language</p>
-        <p style="line-height: .4;">Processor Design & Development</p>
-
-        <br><br>
-        <h3 style="text-align: left;">CPRE 489: Implementation of Multipath TCP Protocol</h3>
-        <h4 style="text-align: left;">Description</h4>
-        <p>In this project, I implemented a simplified version of MPTCP that focuses on using multiple paths and mapping data to those paths. The objective was to establish three TCP data subflows between a client and a server, without using the options field. Instead, an additional control TCP connection was established on which the DSS was sent.<br><br>To start, I created a client program that generated 992 bytes, numbered 0 through 991, containing 16 repetitions of ASCII digits 0 through 9, characters a to z, and characters A to Z. The client established four TCP connections with the server program: one control connection and three data connections representing the TCP subflows. Once each connection was established, it was forked as a child process. The parent process communicated with the child process using pipe().<br><br>The client sent data to the three TCP subflow child processes four bytes at a time in a cyclic manner, where the first 4 bytes were sent to the first subflow, the second 4 bytes were sent to the second subflow, and so on. The client sent a DSS on the TCP control connection for each segment sent on a TCP subflow to establish data mapping to the server. The mapping used from the 992 bytes to the sequence numbers on all three connections was written to a log file.<br><br>Additionally, I implemented a server process that accepted four connections: one control connection and three TCP data subflows. The server process also forked child processes for all three data TCP subflows, and the parent process communicated with the child processes using pipes or Unix sockets. The server process accepted data from all TCP subflows and performed the inverse mapping from the subflow to global sequence numbers. The server process displayed the received 992 bytes in order on the display monitor of the machine running the server. The mapping used from the sequence numbers received on all three connections to the 992 bytes was written to a log file as well.</p>
-        <h4 style="text-align: left;">Skills and Knowledge Gained</h4>
-        <p style="line-height: .4;">Knowledge of Multipath TCP Protocol</p>
-        <p style="line-height: .4;">Multi-Process C Programming</p>
-        <p style="line-height: .4;">TCP Connection Programming</p>
-
-    </section>
-
-    <section id="resume">
-        <h2>Resume</h2>
-        <div class="resume-content">
-            <h3>Thomas Glass</h3>
-            <p>(630) 457-7672 | tglass2001@gmail.com | Geneva, IL | <a href="https://www.linkedin.com/in/tglass2001/" target="_blank">linkedin.com/in/tglass2001</a></p>
-            <p>Cybersecurity Engineering senior who is focused, detail-oriented, methodical, analytical, organized, and team-focused. I seek a software development position at an innovative company. Experience using problem-solving methods and collaboration to secure networks and overcome unexpected problems. I am currently located in the Midwest but am looking forward to relocating to the Washington, DC area.</p>
-            <h3>EDUCATION</h3>
-            <ul>
-                <li>Iowa State University - College of Engineering - Ames, IA May 2023</li>
-                <li>Bachelor of Science - Cybersecurity Engineering</li>
-                <li>Academic Dean’s list</li>
-                <li>Relevant Coursework: Cryptology, Cyber Security Fundamentals, Network Security, Threat Analysis, Firewall Management, Software Development Life Cycle, Network Scanning, Algorithms, Front-End Software Development</li>
-            </ul>
-            <h3>ACADEMIC EXPERIENCE</h3>
-            <h4>Teacher’s Assistant</h4>
-            <p>Operating Systems: Principles and Practice</p>
-            <ul>
-                <li>Assisted in the design, preparation and delivery of lectures and lab activities for a 300-level course in operating systems</li>
-                <li>Mentored and provided individualized support to students, helping them grasp challenging concepts and improve their grades</li>
-                <li>Collaborated with the course instructor to revise and update course materials, including syllabus, lecture slides, and homework assignments</li>
-            </ul>
-            <h4>Network Design, Pen Testing &amp; Remediation</h4>
-            <p>Cyber Security Tools</p>
-            <ul>
-                <li>Pen testing various university networks</li>
-                <li>Evaluating systems for vulnerabilities, understanding potential exploits of the systems, and defenses for the systems</li>
-                <li>Worked to secure computer and network configuration and management. Discover and remediate successful attacks such as SQL injection, remote code execution, URL interpretation, and port security</li>
-                <li>Computer and network security methods including user authentication, access control, firewalls, intrusion detection, use of vulnerability assessment tools and methods, and penetration testing</li>
-                <li>Detection and prevention of security threats such as covert communication, malicious code, and other security threats in protocols</li>
-            </ul>
-            <h4>Music Sharing Application Development</h4>
-            <p>Software Development Practice</p>
-            <ul>
-                <li>Worked to develop the front end of a social media style music sharing application using the software development life cycle</li>
-                <li>Used Github to maintain version control while working on an Android Studio project programmed in java</li>
-            </ul>
-            <h3>ADDITIONAL SKILLS</h3>
-            <ul>
-                <li>Java; C#; C; Python; Object-Oriented Programming; Front-End Software Development; SDLC; Agile Development; Risk Analysis; Communication; Teamwork; Integrity; Time Management; Interpersonal Relationship Building</li>
-            </ul>
-            <h3>WORK EXPERIENCE</h3>
-            <h4>Chicago Union Ultimate Frisbee - Youth Coach</h4>
-            <ul>
-                <li>Independently ran several Chicago Union, a professional sports team, summer camps for middle and high school-aged kids in the Chicagoland area</li>
-                <li>Oversaw summer camp functions, including making decisions regarding risk management and daily plans</li>
-                <li>Coached 30 youth players through the process of learning ultimate frisbee while fostering continuous growth</li>
-            </ul>
-            <h4>DoorDaSh - Delivery Driver</h4>
-            <ul>
-                <li>Demonstrated professional conduct with clients to deliver outstanding customer service resulting in consistently high customer satisfaction scores while handling as many as 35 assignments per day</li>
-            </ul>
-            <h4>Party City- Sales Associate</h4>
-            <ul>
-                <li>Developed strong customer management skills using knowledge of products and target customers</li>
-                <li>Trained and developed new sales team associates in product knowledge, selling techniques, and company procedure</li>
-            </ul>
-        </div>
-    </section>
-
-    <script>
-      // Get all navigation links
-      const navLinks = document.querySelectorAll('.nav');
-
-      // Add click event listener to each navigation link
-      navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-          // Get the section to show/hide
-          const section = document.querySelector(`#${link.dataset.section}`);
-
-          // Hide all other sections
-          const sections = document.querySelectorAll('section');
-          sections.forEach(s => {
-            if (s !== section) {
-              s.style.display = 'none';
-            }
-          });
-
-          // Show the selected section
-          section.style.display = 'block';
-        });
-      });
-    </script>
-  </body>
+  <p>This is a basic website with a dark gray background and a navigation menu at the top.</p>
+</body>
 </html>
