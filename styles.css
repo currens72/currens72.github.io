@@ -124,12 +124,13 @@ nav a {
 .project {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center the project vertically */
+  align-items: center;
   margin-bottom: 20px;
 }
 
 .project-details {
   display: flex;
+  justify-content: center;
 }
 
 .project-words {
@@ -140,21 +141,21 @@ nav a {
 
 .project h2 {
   font-weight: bold;
-  text-align: center; /* Center the project header horizontally */
+  text-align: center;
   margin-bottom: 10px;
 }
 
 .project-image {
-  margin-top: 20px; /* Add margin-top to create space between details and image */
-  text-align: right;
-}
-
-.project-image img {
-  max-width: 700px;
+  max-width: 40%;
+  margin-top: 20px;
   height: auto;
   margin-right: 50px;
 }
 
+.project-image img {
+  max-width: 100%;
+}
+
 .project-description a {
-  color: red;
+  color: #2b83cc;
 }
