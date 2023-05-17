@@ -79,7 +79,8 @@ nav a {
 }
 
 .card {
-  width: 200px;
+  width: 220px;
+  height: 220px;
   background-color: #414141;
   padding: 20px;
   border-radius: 4px;
@@ -93,6 +94,13 @@ nav a {
 
 .card h2 {
   color: #2b83cc;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.card p {
+  margin-top: 30px;
+  margin-bottom: 45px;
 }
 
 .card .see-more {
