@@ -32,11 +32,10 @@ nav a {
 }
 
 .content {
-  max-width: 1200px;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 20px;
-  transform: translate(35%, 0%);
 }
 
 .content h1 {
