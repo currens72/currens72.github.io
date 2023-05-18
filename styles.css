@@ -174,3 +174,41 @@ nav a {
 .project-description a {
   color: #2b83cc;
 }
+
+.skills {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.skill img {
+  width: 120px;
+  height: 120px;
+  margin-right: 10px;
+}
+
+.skill .progress-bar {
+  width: 500px;
+  height: 25px;
+  background-color: lightgray;
+}
+
+.skill .progress {
+  height: 100%;
+  background-color: #4CAF50;
+}
+
+.skill .notch {
+  width: 2px;
+  height: 10px;
+  background-color: white;
+  margin-right: 2px;
+}
