@@ -71,10 +71,17 @@ nav a {
   background-color: #5c5c5c;
 }
 
+.see-more {
+  color: #2b83cc;
+  text-decoration: none;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .cards {
   display: flex;
   justify-content: center;
-  gap: 200px;
+  gap: 150px;
   margin-top: 150px;
 }
 
@@ -137,6 +144,7 @@ nav a {
   flex: 1;
   text-align: left;
   margin-left: 50px;
+  margin-right: 10px;
 }
 
 .project h2 {
@@ -150,10 +158,17 @@ nav a {
   margin-top: 20px;
   height: auto;
   margin-right: 50px;
+  text-align: center;
 }
 
 .project-image img {
   max-width: 100%;
+}
+
+.project-image h5 {
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-top: 0px;
 }
 
 .project-description a {
