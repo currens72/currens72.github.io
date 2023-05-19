@@ -182,34 +182,46 @@ nav a {
   justify-content: center;
 }
 
+.section {
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.section-skills {
+  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .skill {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
-  width: 40%;
+  width: 90%;
 }
 
 .skill img {
-  width: 130px;
+  width: 20%;
   height: auto;
   margin-right: 10px;
 }
 
 .skill .progress-bar {
-  width: 500px;
   height: 25px;
-  background-color: lightgray;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+}
+
+.notch {
+  border-radius: 5px;
+  height: 100%;
+  width: 16%;
+  margin-right: 5px;
 }
 
 .skill .progress {
   height: 100%;
   background-color: #4CAF50;
-}
-
-.skill .notch {
-  width: 2px;
-  height: 10px;
-  background-color: white;
-  margin-right: 2px;
 }
