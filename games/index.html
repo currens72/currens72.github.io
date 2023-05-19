@@ -27,8 +27,10 @@
     let currentPositionY = 0;
     let currentPositionX = 0;
     let snakeDirection = 4;
+    let speed = 200;
+    let score = 0;
 
-    function moveSnakePiece() {
+    function updateGame() {
       if (snakeDirection == 1) { //up
         currentPositionY -= 10;
         snakePiece.style.transform = `translate(${currentPositionX}px, ${currentPositionY}px)`;
@@ -59,7 +61,7 @@
       }
     }
 
-    const interval = setInterval(moveSnakePiece, 200);
+    const interval = setInterval(updateGame, speed);
 
     document.addEventListener('keydown', (event) => {
       if (event.key === 'w') {
