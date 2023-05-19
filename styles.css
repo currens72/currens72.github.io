@@ -228,3 +228,18 @@ nav a {
   height: 100%;
   background-color: #4CAF50;
 }
+
+#game-board {
+  width: 660px;
+  height: 440px;
+  background-color: black;
+  border: 2px solid white;
+  margin-top: 50px;
+  margin: 0 auto;
+}
+
+#snake-piece {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+}

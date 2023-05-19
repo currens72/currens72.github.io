@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thomas Glass</title>
+  <link rel="stylesheet" type="text/css" href="../styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+          <li><a href="../">Home</a></li>
+          <li><a href="../project_portfolio/">Project Portfolio</a></li>
+          <li><a href="../skills/">Skills</a></li>
+          <li><a href="../games/">Games</a></li>
+          <li><a href="../contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h2 style="text-align: center;">Snake Game</h2>
+  <div id="game-board">
+    <div id="snake-piece"></div>
+  </div>
+
+  <script>
+    const snakePiece = document.getElementById('snake-piece');
+    let currentPositionY = 0;
+    let currentPositionX = 0;
+    let snakeDirection = 4;
+
+    function moveSnakePiece() {
+      if (snakeDirection == 1) { //up
+        currentPositionY -= 10;
+        snakePiece.style.transform = `translate(${currentPositionX}px, ${currentPositionY}px)`;
+      }
+      if (snakeDirection == 2) { //left
+        currentPositionX -= 10;
+        snakePiece.style.transform = `translate(${currentPositionX}px, ${currentPositionY}px)`;
+      }
+      if (snakeDirection == 3) { //down
+        currentPositionY += 10;
+        snakePiece.style.transform = `translate(${currentPositionX}px, ${currentPositionY}px)`;
+      }
+      if (snakeDirection == 4) { //right
+        currentPositionX += 10;
+        snakePiece.style.transform = `translate(${currentPositionX}px, ${currentPositionY}px)`;
+      }
+      if(currentPositionY < 0) {
+        clearInterval(interval);
+      }
+      if(currentPositionX < 0) {
+        clearInterval(interval);
+      }
+      if(currentPositionY > 430) {
+        clearInterval(interval);
+      }
+      if(currentPositionX > 650) {
+        clearInterval(interval);
+      }
+    }
+
+    const interval = setInterval(moveSnakePiece, 200);
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'w') {
+        snakeDirection = 1;
+      }
+      if (event.key === 'a') {
+        snakeDirection = 2;
+      }
+      if (event.key === 's') {
+        snakeDirection = 3;
+      }
+      if (event.key === 'd') {
+        snakeDirection = 4;
+      }
+    });
+
+    setTimeout(() => {
+     clearInterval(interval);
+    }, 50000);
+  </script>
+
+  <footer class="footer">
+    <p>Site hosted on GitHub Pages | Designed by Thomas Glass</p>
+  </footer>
+</body>
+</html>
