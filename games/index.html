@@ -32,31 +32,22 @@
 
     function updateGame() {
       if (snakeDirection == 1) { //up
-        currentPositionY -= 10;
+        currentPositionY -= 20;
         snakePiece.style.transform = `translate(${currentPositionX}px, ${currentPositionY}px)`;
       }
       if (snakeDirection == 2) { //left
-        currentPositionX -= 10;
+        currentPositionX -= 20;
         snakePiece.style.transform = `translate(${currentPositionX}px, ${currentPositionY}px)`;
       }
       if (snakeDirection == 3) { //down
-        currentPositionY += 10;
+        currentPositionY += 20;
         snakePiece.style.transform = `translate(${currentPositionX}px, ${currentPositionY}px)`;
       }
       if (snakeDirection == 4) { //right
-        currentPositionX += 10;
+        currentPositionX += 20;
         snakePiece.style.transform = `translate(${currentPositionX}px, ${currentPositionY}px)`;
       }
-      if(currentPositionY < 0) {
-        clearInterval(interval);
-      }
-      if(currentPositionX < 0) {
-        clearInterval(interval);
-      }
-      if(currentPositionY > 430) {
-        clearInterval(interval);
-      }
-      if(currentPositionX > 650) {
+      if(currentPositionY < 0 || currentPositionX < 0 || currentPositionY > 430 || currentPositionX > 650) {
         clearInterval(interval);
       }
     }

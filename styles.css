@@ -239,7 +239,21 @@ nav a {
 }
 
 #snake-piece {
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   background-color: red;
+  border: 1px solid black;
+}
+
+#snake-body {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border: 1px solid black;
+}
+
+#apple-piece {
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
 }
