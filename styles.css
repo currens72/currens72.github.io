@@ -209,6 +209,8 @@ nav a {
   width: 20%;
   height: auto;
   margin-right: 10px;
+  background-color: #545454;
+  background-size: 150px 20%;
 }
 
 .skill .progress-bar {
