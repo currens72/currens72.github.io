@@ -203,14 +203,14 @@ nav a {
   justify-content: center;
   margin-bottom: 50px;
   width: 90%;
+  background-color: #2e2e2e;
+  border-radius: 10px;
 }
 
 .skill img {
   width: 20%;
   height: auto;
   margin-right: 10px;
-  background-color: #545454;
-  background-size: 150px 20%;
 }
 
 .skill .progress-bar {
